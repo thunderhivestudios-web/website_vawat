@@ -1,0 +1,49 @@
+/*----------------------------------------------
+    # Title style here
+----------------------------------------------*/
+ .section-title {
+	.subtitle {
+		img {
+			margin-right: 10px;
+		}
+		color: $title-color; 
+		font-family:  $title-font;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 28px;  
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		color: $theme-color; 
+		font-family: $title-font;
+		font-size: 42px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		margin-bottom: 30px;
+
+		@include breakpoint (max-lg){
+			font-size: 39px;
+		}
+
+		@include breakpoint (max-md){
+			font-size: 36px;
+		}
+
+		@include breakpoint (max-sm){
+			font-size: 32px;
+		}
+	}
+
+	.text {
+		color: $text-color; 
+		font-family: $body-font;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 28px; 
+	}
+ }
+ 

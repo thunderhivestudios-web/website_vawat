@@ -1,0 +1,73 @@
+/*----------------------------------------------
+    # Container  style here
+----------------------------------------------*/
+
+@media (min-width: 1500px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1200px;
+    }
+  }
+
+@media (min-width:1400px) {
+    .header-1 {
+        .container {
+            max-width: 1620px;
+        }
+    }
+
+    .header-2 {
+        .container { 
+            max-width: 1890px;
+        }
+    }
+
+    .header-3 {
+        .container { 
+            max-width: 1890px;
+        }
+    } 
+
+    .contact-form-container-wrapper {
+        &.style1 {
+            .container { 
+                max-width: 1410px;
+            }
+        }
+    }
+    
+    .blog-container-wrapper {
+        &.style1 {
+            .container { 
+                max-width: 1590px;
+            }
+        }
+    }
+
+    .blog-container-wrapper {
+        &.style3 {
+            .container { 
+                max-width: 1320px;
+            }
+        }
+    }
+
+    .service-container-wrapper {
+        &.style3 {
+            .container { 
+                max-width: 1480px;
+            }
+        }
+    }
+    
+    .intro-container-wrapper {
+        &.style3 {
+            .container { 
+                max-width: 1773px;
+            }
+        }
+    } 
+    
+}
+ 
+
+  

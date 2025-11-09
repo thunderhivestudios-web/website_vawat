@@ -1,0 +1,254 @@
+
+.service-container-wrapper {
+    &.style2 {
+        margin-top: -5.1em;
+        .title-wrap { 
+                margin-bottom: 50px; 
+        }
+    }
+}
+
+.service-section {
+    position: relative;
+
+    .light-shape {
+        position: absolute;
+        top: 90px;
+        right: 130px;
+
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+}
+
+.service-wrapper-4 {
+    .service-left-content {
+        .service-list {
+            margin-bottom: 40px;
+
+            li {
+                font-size: 24px;
+                font-weight: 500;
+                color: $title-color;
+                border-top: 1px solid rgba(30, 41, 46, .15);
+                padding: 20px 0;
+
+               &:last-child{
+                    border-bottom: 1px solid rgba(30, 41, 46, .15);    
+               }
+            }
+        }
+    }
+
+    .service-box-items {
+        padding: 30px;
+        background-color: $white;
+        border-radius: 8px;
+
+        .content {
+            margin-top: 20px;
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+
+                a {
+                    &:hover {
+                        color: #ffb000;
+                    }
+                }
+            }
+
+            .link {
+                margin-top: 20px;
+                
+                a {
+                    color: $theme-color; 
+                    font-family: "Plus Jakarta Sans";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;  
+
+                    i {
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
+                        color: #ffb000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-deatails-wrapper {
+    .service-details-image {
+        img {
+        height: 100%;
+        width: 100%;
+        }
+    }
+
+    .details-content {
+        margin-top: 40px;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: capitalize;
+            color: $title-color;
+
+            @include breakpoint (max-lg){
+                font-size: 44px;
+            }
+
+            @include breakpoint (max-md){
+                font-size: 38px;
+            }
+
+            @include breakpoint (max-sm){
+                font-size: 32px;
+            }
+        }
+
+        .post-card {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(30, 41, 46, 0.15);
+            padding-bottom: 35px;
+
+            @include breakpoint (max-xl) {
+                @include flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            li {
+                color: $theme-color;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                line-height: 1;
+                display: inline-block;
+                padding: 10px 16px;
+                border-radius: 100px;
+                border: 1px solid rgba(30, 41, 46, 0.15);
+                margin-right: 20px;
+
+                @include breakpoint (max-xl) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        h3 {
+          font-size: 36px;
+          margin-bottom: 20px;
+
+            @include breakpoint (max-md) {
+                font-size: 32px;
+            }
+
+            @include breakpoint (max-sm) {
+                font-size: 28px;
+            }
+        }
+
+        .list-items {
+            @include flex;
+            justify-content: space-between;
+
+            @include breakpoint (max-xxl){
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            li {
+                color: $text-color;
+                text-transform: capitalize;
+                position: relative;
+
+                span {
+                    padding-left: 25px;
+                    display: inline-block;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 6px;
+                    background-color: $theme-color;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .progress-wrap {
+            .pro-items {
+                width: 100%;
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                .pro-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    .title {
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                    
+                    .point {
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                }
+                .progress {
+                    background: #353536;
+                    justify-content: flex-start;
+                    border-radius: 0;
+                    align-items: center;
+                    position: relative;
+                    display: flex;
+                    height: 8px;
+                    width: 100%;
+                }
+                
+                .progress-value {
+                    animation: load 3s normal forwards;
+                    border-radius: 0;
+                    background: $theme-color;
+                    height: 8px;
+                    width: 0;
+                }
+                .style-two{
+                    animation: load2 3s normal forwards;
+                }
+                @keyframes load {
+                    0% { width: 0; }
+                    100% { width: 76%; }
+                }
+                @keyframes load2 {
+                    0% { width: 0; }
+                    100% { width: 85%; }
+                }
+            }
+        }
+    }
+}

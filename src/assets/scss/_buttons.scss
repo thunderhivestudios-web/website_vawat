@@ -1,0 +1,118 @@
+/*----------------------------------------------
+    # Buttons style here
+----------------------------------------------*/
+.theme-btn {
+    display: inline-block;
+    position: relative;
+    padding: 17px 27px;
+    gap: 10px;
+    color: $white; 
+    font-family: $title-font; 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    background: $theme-color;
+    z-index: 1;
+    line-height: 1;
+    overflow: hidden;
+    border: 1px solid $title-color;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+
+    @include breakpoint (max-xxl) {
+        font-size: 16px; 
+        padding: 12px 13px;
+    }
+
+    i,svg {
+        margin-left: 6px;
+    }
+
+    &:before {
+        transition-duration: 800ms;
+        position: absolute;
+        width: 210%;
+        height: 290%;
+        content: "";
+        top: 162%;
+        left: 50%;
+        background: #ffb000;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%) rotate(-8deg);
+        border-radius: 80%;
+        z-index: -1;
+    }
+ 
+    &:hover {
+        color: $title-color !important;
+
+        &:before {
+            top: -96%;
+        }
+    }
+
+
+    &.style2 {
+        background: $white;
+        color: $theme-color;
+
+        &:before {
+            transition-duration: 800ms;
+            position: absolute;
+            width: 210%;
+            height: 290%;
+            content: "";
+            top: 162%;
+            left: 50%;
+            background: $theme-color;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-8deg);
+            border-radius: 80%;
+            z-index: -1;
+        }
+     
+        &:hover {
+            color: $white !important;
+    
+            &:before {
+                top: -96%;
+            }
+        }
+    }
+}
+
+ 
+
+.link-btn {
+    &.style1 {
+        display: inline-block;
+        width: 92px;
+        height: 92px;
+        line-height: 92px;
+        text-align: center; 
+        border: 1px solid  rgba(255, 255, 255, 0.25);
+        border-radius: 50%;
+
+        @include breakpoint (max-xl4) {
+            width: 60px;
+            height: 60px;
+            line-height: 60px; 
+        }
+    }
+
+    &.style2 {
+        display: inline-block;
+        width: 68px;
+        height: 68px;
+        line-height: 68px;
+        text-align: center;
+        background-color: $white;
+    }
+ 
+}
+ 

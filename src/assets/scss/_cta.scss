@@ -1,0 +1,168 @@
+.cta-container-wrapper {
+    &.style2 {
+        position: relative;
+
+        .shape {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.cta-wrapper {
+    &.style2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 35px;
+
+        @include breakpoint (max-xl) {
+            flex-direction: column;
+        }
+
+        .cta-thumb1 {
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: relative;
+                z-index: 3;
+                transform: rotate(-4deg);
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                -webkit-transform: rotate(-4deg);
+                -moz-transform: rotate(-4deg);
+                -ms-transform: rotate(-4deg);
+                -o-transform: rotate(-4deg);
+}
+
+            .bg-box {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+                width: 243.642px;
+                height: 263.384px;
+                transform: rotate(-9.063deg);
+                background-color: $white;
+                opacity: 0.3;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+            }
+        }
+
+        .cta-text {
+            color: $white;
+            text-align: center;
+            font-family: $title-font;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100px;
+            text-transform: uppercase;
+            max-width: 890px;
+            @include breakpoint (max-xl4) {
+                max-width: 800px;
+                font-size: 70px;
+            }
+            @include breakpoint (max-xxl) {
+                max-width: 500px;
+                font-size: 50px; 
+                line-height: 70px;
+            }
+            .stroke-text {
+                text-align: center;
+                font-family: $title-font;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100px;
+                text-transform: uppercase;
+                -webkit-text-stroke: 1px $white;
+                -webkit-text-fill-color: transparent;
+                @include breakpoint (max-xl4) { 
+                    font-size: 70px;
+                }
+                @include breakpoint (max-xxl) { 
+                    font-size: 50px;
+                    line-height: 1;
+                }
+            }
+
+            .underline-text {
+                text-decoration: underline;
+            }
+
+            .stroke-underlined {
+                color: $white;
+                text-align: center;
+                font-family: $title-font;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100px;
+                -webkit-text-stroke: 1px $white;
+                -webkit-text-fill-color: transparent;
+                text-decoration-line: underline;
+                text-transform: uppercase;
+                @include breakpoint (max-xl4) { 
+                    font-size: 70px;
+                }
+
+                @include breakpoint (max-xxl) { 
+                    font-size: 50px;
+                    line-height: 1;
+                }
+            }
+        }
+
+        .cta-thumb2 {
+            position: relative;
+            display: inline-block;
+
+            img {
+                position: relative;
+                z-index: 3;
+                transform: rotate(176deg);
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                -webkit-transform: rotate(176deg);
+                -moz-transform: rotate(176deg);
+                -ms-transform: rotate(176deg);
+                -o-transform: rotate(176deg);
+}
+
+            .bg-box {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 0;
+                width: 243.642px;
+                height: 263.384px;
+                transform: rotate(170.95deg);
+                background-color: $white;
+                opacity: 0.3;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                -webkit-transform: rotate(170.95deg);
+                -moz-transform: rotate(170.95deg);
+                -ms-transform: rotate(170.95deg);
+                -o-transform: rotate(170.95deg);
+}
+        }
+    }
+}

@@ -1,0 +1,227 @@
+.team-details-wrapper {
+    .team-details-items {
+        border: 1px solid #E5E5E5;
+        padding: 30px;
+        border-radius: 10px;
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint (max-xxl){
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .thumb {
+            max-width: 390px;
+
+            img {
+                @include imgw;
+                border-radius: 10px;
+            }
+        }
+
+        .content {
+            max-width: 680px;
+
+            .cont {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 36px;
+                }
+            }
+
+            .signature {
+                margin-top: 30px;
+            }
+
+            .team-contact-info {
+                border-top: 1px solid $border-color;
+                border-bottom: 1px solid $border-color;
+                padding: 30px 0;
+                @include flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            
+                @include breakpoint (max-xl){
+                    padding: 20px 20px;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+            
+                .icon-items {
+                    @include flex;
+                    gap: 12px;
+            
+                    @include breakpoint (max-xl){
+                       flex-wrap: wrap;
+                    }
+            
+                    @include breakpoint (max-md){
+                        flex-wrap: nowrap; 
+                        justify-content: space-between;
+                     }
+            
+                    .icon {
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
+                        border-radius: 50%;
+                        text-align: center;
+                        background-color: #E9EFF2;
+                        color: $theme-color; 
+                    }
+            
+                    h5 {
+                        font-size: 16px;
+                        font-family: $body-font;
+                        font-weight: 400;
+                        text-transform: initial;
+                        
+                        a {
+                            color: $text-color;
+            
+                            &:hover {
+                                color: $theme-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .team-details-info{
+                position: relative;
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                span{
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    letter-spacing: 0.16px;
+                    color: var(--black);
+                    @include breakpoint(max-sm){
+                        position: static;
+                    }
+                }
+                a{
+                    margin-left: 200px;
+                    font-size: 16px;
+                    color: $text-color;
+                    @include breakpoint(max-sm){
+                        margin-left: 0;
+                        display: block;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .social-icon{
+                @include flex;
+                gap: 10px;
+                li{
+                   background-color: rgba(39, 51, 57, .15);
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 100%;
+                    transition: all 0.4s ease-in-out;
+                    text-align: center;
+                    cursor: pointer;
+                   a{
+                        i{
+                            color: $title-color;
+                            @include transition
+                        }
+                   }
+                   &:hover{
+                    background-color: $theme-color;
+                        a{
+                            i{
+                                color: $white;
+                            }
+                        }
+                   }
+                }
+            }
+        }
+    }
+}
+
+.personal-information-area {
+    background: #E9EFF2;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.personal-information-wrapper {
+    .personal-skill-wrapper {
+        padding: 28px 30px;
+        background-color: $white;
+        margin-top: 60px;
+
+        h4 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .progress-wrap {
+            .pro-items {
+                width: 100%;
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                .pro-head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    .title {
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                    
+                    .point {
+                        font-size: 16px;
+                        color: $title-color;
+                        font-weight: 700;
+                    }
+                }
+                .progress {
+                    background: #F6F3FE;
+                    justify-content: flex-start;
+                    border-radius: 0;
+                    align-items: center;
+                    position: relative;
+                    display: flex;
+                    height: 15px;
+                    width: 100%;
+                }
+                
+                .progress-value {
+                    animation: load 3s normal forwards;
+                    border-radius: 0;
+                    background: $theme-color;
+                    height: 15px;
+                    width: 0;
+                }
+                .style-two{
+                    animation: load2 3s normal forwards;
+                }
+                @keyframes load {
+                    0% { width: 0; }
+                    100% { width: 76%; }
+                }
+                @keyframes load2 {
+                    0% { width: 0; }
+                    100% { width: 85%; }
+                }
+            }
+        }
+    }
+}
